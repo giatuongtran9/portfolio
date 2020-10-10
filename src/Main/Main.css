@@ -1,0 +1,58 @@
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Main {
+    min-height: 100vh;
+    max-width: 100vw;
+    /* background-image: url('../img/hero-bg.png'); */
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 100px 200px;
+}
+
+
+.Main h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relatve;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.Main h1:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.Main h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.Main h1:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.Main a {
+    border: 2px solid crimson;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: crimson;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+@keyframes text_reveal {
+    100% {
+        color: black;
+    }
+}
+
