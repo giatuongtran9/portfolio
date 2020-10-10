@@ -1,0 +1,49 @@
+.About {
+    flex-direction: row;
+    padding: 80px 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    border: 2px solid black;
+}
+
+.ColLeft {
+    width: 200px;
+    height: 550px;
+    flex-basis: 50%;
+}
+
+
+.image {
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    border: 8px solid crimson;
+    position: relative;
+}
+
+
+.ColRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+    margin-left: 50px;
+}
+
+.ColRight h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+
+.ColRight h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
