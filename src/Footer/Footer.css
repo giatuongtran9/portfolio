@@ -1,0 +1,22 @@
+.Footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border: 2px solid black;
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+
+}
