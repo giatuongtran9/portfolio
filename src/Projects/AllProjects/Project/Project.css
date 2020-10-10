@@ -1,0 +1,35 @@
+.Project {
+    display: flex;
+ 
+    justify-content: flex-start;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.ProjectInfo1 {
+    padding: 0 20px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ProjectInfo2 {
+    padding: 0 20px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ProjectImage {
+    flex-basis: 50%;
+    height: 300px;
+    position: relative;
+}
