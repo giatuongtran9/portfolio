@@ -1,0 +1,12 @@
+.Contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0;
+}
+
+.Items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
