@@ -1,0 +1,44 @@
+ .NavList {
+    list-style: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+    overflow-x: hidden;
+    padding: 0 2a0px
+}
+
+.NavList ul a {
+    color: white;
+    text-decoration: none;
+    display:block;
+    text-transform: uppercase;
+    padding: 0 80px;
+    font-weight: 700;
+
+}
+
+ @media only screen and (min-width: 1200px) {
+    .NavList {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .NavList li {
+        display: inline-block;
+        cursor: pointer;
+    }
+} 
+/*
+@media only screen and (min-width: 768px) {
+    
+} */
