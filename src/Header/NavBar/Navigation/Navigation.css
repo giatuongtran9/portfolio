@@ -1,4 +1,4 @@
- .NavList {
+.NavList ul {
     list-style: none;
     position: absolute;
     width: 100vw;
@@ -7,25 +7,106 @@
     top: 0;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     z-index: 1;
     overflow-x: hidden;
-    padding: 0 2a0px
+    background-color: rgb(31,30,30);
+    transition: .5s ease left;
 }
 
+.NavList ul.active {
+    left: 0%;
+}
+
+
 .NavList ul a {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
     color: white;
     text-decoration: none;
     display:block;
     text-transform: uppercase;
-    padding: 0 80px;
-    font-weight: 700;
+    padding: 0 50px;
 
 }
 
+.NavList ul a::after {
+    content: attr(data-after);
+    position: absolute;
+    font-size: 12rem;
+    letter-spacing: 50px;
+    color: rgba(240, 240, 255, 0.021);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s ease letter-spacing;
+}
+
+.NavList ul li:hover a::after {
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: initial;
+}
+
+.Hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(.8);
+    margin-right: 50px;
+}
+
+.NavList .Hamburger .bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+}
+
+.Hamburger .bar::after,
+.Hamburger .bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+
+.Hamburger .bar::after {
+    top: 8px;
+}
+
+.Hamburger .bar::before {
+    bottom: 8px;
+}
+
+.Hamburger.active .bar::before {
+    bottom: 0;
+}
+
+.Hamburger.active .bar::after {
+    top: 0;
+}
+
+
  @media only screen and (min-width: 1200px) {
-    .NavList {
+     .Hamburger {
+        display: none;
+    } 
+
+     .NavList ul {
         position: initial;
         display: block;
         height: auto;
@@ -36,6 +117,10 @@
     .NavList li {
         display: inline-block;
         cursor: pointer;
+    } 
+
+    .NavList ul a::after {
+        display: none;
     }
 } 
 /*
