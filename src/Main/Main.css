@@ -13,14 +13,15 @@ img {
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    padding: 100px 200px;
+    padding: 120px 200px;
+    justify-content: flex-start;
 }
 
 
 .Main h1 {
     display: block;
     width: fit-content;
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relatve;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -41,11 +42,11 @@ img {
 }
 
 .Main a {
-    border: 2px solid crimson;
+    border: 3px solid crimson;
     font-size: 2.5rem;
     text-decoration: none;
     color: crimson;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -55,4 +56,11 @@ img {
         color: black;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .Main h1 {
+        font-size: 4rem;
+    }
+}
+
 
