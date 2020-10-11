@@ -32,6 +32,10 @@
 
 }
 
+.NavList ul a:hover {
+    color: crimson;
+}
+
 .NavList ul a::after {
     content: attr(data-after);
     position: absolute;
