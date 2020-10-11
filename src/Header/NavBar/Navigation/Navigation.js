@@ -14,21 +14,17 @@ class Navigation extends React.Component {
         })
     }
 
-    active = () => {
-        return (this.state.isActive===true) ? 'active' : null
-    }
-
     render() {
         return (
         <div className={navcss.NavList}>
-            <div className={`${navcss.Hamburger} ${this.state.isActive ? 'active' : ''}`} onClick={this.clicked.bind(this)}>
+            <div className={navcss.Hamburger} onClick={this.clicked.bind(this)}>
                 <div 
                     className={navcss.bar}>
                 </div>
             </div>
-            <ul className={`${this.state.isActive ? 'active' : ''}`}>
+            <ul style={this.state.isActive ? {left: '0'} : {left: '100%'}}>
                 <li><Link data-after="Home" activeClass="active" to="main" spy={true} smooth={true} duration={1000} >Home</Link></li>
-                <li><Link data-after="Projects" activeClass="active" to="projects" spy={true} smooth={true} duration={1000}>Projects</Link></li>
+                <li><Link style={this.state.isActive ? {left: '0'} : {left: '100%'}} data-after="Projects" activeClass="active" to="projects" spy={true} smooth={true} duration={1000}>Projects</Link></li>
                 <li><Link data-after="About" activeClass="active" to="about" spy={true} smooth={true} duration={1000}>About</Link></li>
                 <li><Link data-after="Contact" activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>Contact</Link></li>
             </ul>
