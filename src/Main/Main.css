@@ -13,7 +13,7 @@ img {
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    padding: 80px 80px;
+    padding: 100px 80px;
     justify-content: flex-start;
 }
 
@@ -59,7 +59,7 @@ img {
 
 @media only screen and (min-width: 768px) {
     .Main h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 

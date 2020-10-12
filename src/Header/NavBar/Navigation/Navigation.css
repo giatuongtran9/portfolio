@@ -83,7 +83,7 @@
     transition: .3s ease;
     transition-property: top, bottom;
 }
-/*
+
 .Hamburger .bar::after {
     top: 8px;
 }
@@ -92,13 +92,6 @@
     bottom: 8px;
 }
 
-.Hamburger.active .bar::before {
-    bottom: 0;
-}
-
-.Hamburger.active .bar::after {
-    top: 0;
-} */
 
 
  @media only screen and (min-width: 1200px) {
