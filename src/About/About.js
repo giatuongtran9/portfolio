@@ -12,7 +12,8 @@ const About = () => (
         <div className={aboutcss.ColRight}>
             <h1>About Me</h1>
             <h2>Web Developer</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
+            <p>A highly organized and passionate computer programming fresher with a strong understanding of the needs to deliver the best results in the role of Web Developer. My goad is to continually develop my programming skills in order to produce better solutions to the clients. I enjoy being challenged, working with projects outside my comfort zone and discovering new technologies and tools.</p>
+            <a href="../download/GiaTuongTran.Resume.pdf" download>Download Resume</a>
         </div>
     </section>
 )
