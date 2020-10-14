@@ -1,12 +1,11 @@
-.imgage {
+.image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+    height: auto;
+    object-fit: fill;
 }
 
 .Main {
-    min-height: 100vh;
+    min-height: auto;
     max-width: 100vw;
     background-size: cover;
     background-position: top center;
