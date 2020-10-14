@@ -4,8 +4,9 @@
     width: 80%;
     margin: 20px auto;
     border-radius: 10px;
-    border: 2px solid black;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
+
 
 .ProjectInfo1 {
     padding: 0 20px;
@@ -15,6 +16,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
 }
 
 .ProjectInfo1 h1 {
@@ -35,15 +37,18 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
 }
 
-.ProjectInfo1:hover,
-.ProjectInfo2:hover {
-    box-shadow: 20px;
-}
 
 .ProjectImage {
     flex-basis: 50%;
     height: 320px;
     position: relative; 
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
