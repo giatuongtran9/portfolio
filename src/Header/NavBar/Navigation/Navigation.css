@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh;
     left: 100%;
-    top: 0;
+    top: -15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,9 +112,9 @@
         cursor: pointer;
     } 
 
-    /* .NavList ul a::after {
+    .NavList ul a::after {
         display: none;
-    } */
+    }
 } 
 /*
 @media only screen and (min-width: 768px) {
