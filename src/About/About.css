@@ -23,6 +23,7 @@
     font-size: 2rem;
     border: 8px solid crimson;
     position: relative;
+    object-fit: cover;
 }
 
 
@@ -59,9 +60,28 @@
     color: crimson;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .ColRight span {
     color: crimson;
+}
+
+@media only screen and (max-width: 600px) {
+    .About {
+        flex-direction: row;
+        padding: 80px 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        max-width: 1200px;
+        border: 2px solid black;
+    }
+
+    .ColRight {
+        margin-left: 20px;
+    }
 }
 
