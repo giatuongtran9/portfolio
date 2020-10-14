@@ -17,7 +17,7 @@ class Header extends React.Component {
             ...this.state.a
         };
 
-        if (position > 250) {
+        if (position > 500) {
             background = '#29323c'
         } else {
             background = 'transparent'
