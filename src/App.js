@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import app from './App.css'
 import Header from './Header/Header'
 import Main from './Main/Main'
 import Projects from './Projects/Projects'
@@ -12,12 +12,14 @@ import { HashRouter } from 'react-router-dom'
 function App() {
   return (
     <HashRouter>
-      <Header />
-      <Main />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
+      <div className={app.App}>
+        <Header />
+        <Main />
+        <Projects />
+        <About />
+        <Contact />
+        <Footer />
+      </div>
     </HashRouter>
   );
 }
