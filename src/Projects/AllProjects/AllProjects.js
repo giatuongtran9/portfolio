@@ -1,6 +1,6 @@
 import React from 'react'
 import allprojectscss from './AllProjects.css'
-import image1 from '../../img/img-1.png'
+import image1 from '../../img/chatapp.png'
 
 import Project from './Project/Project'
 
