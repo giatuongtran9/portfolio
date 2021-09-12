@@ -1,6 +1,6 @@
 import React from 'react'
 import allprojectscss from './AllProjects.css'
-import chatapp from '../../img/chatapp.png'
+import chatapp from '../../img/chatapp.PNG'
 import random from '../../img/random.png'
 import image3 from '../../img/img-1.png'
 
